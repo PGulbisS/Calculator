@@ -1,0 +1,16 @@
+D:\Cprogramm\calculatordemo\calculatordemo\bin\Debug\net5.0\calculatordemo.exe
+D:\Cprogramm\calculatordemo\calculatordemo\bin\Debug\net5.0\calculatordemo.deps.json
+D:\Cprogramm\calculatordemo\calculatordemo\bin\Debug\net5.0\calculatordemo.runtimeconfig.json
+D:\Cprogramm\calculatordemo\calculatordemo\bin\Debug\net5.0\calculatordemo.runtimeconfig.dev.json
+D:\Cprogramm\calculatordemo\calculatordemo\bin\Debug\net5.0\calculatordemo.dll
+D:\Cprogramm\calculatordemo\calculatordemo\bin\Debug\net5.0\ref\calculatordemo.dll
+D:\Cprogramm\calculatordemo\calculatordemo\bin\Debug\net5.0\calculatordemo.pdb
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.csproj.AssemblyReference.cache
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.AssemblyInfoInputs.cache
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.AssemblyInfo.cs
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.csproj.CoreCompileInputs.cache
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.dll
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\ref\calculatordemo.dll
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.pdb
+D:\Cprogramm\calculatordemo\calculatordemo\obj\Debug\net5.0\calculatordemo.genruntimeconfig.cache
