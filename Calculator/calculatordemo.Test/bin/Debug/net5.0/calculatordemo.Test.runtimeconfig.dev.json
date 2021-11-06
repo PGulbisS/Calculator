@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\gulbi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gulbi\\.nuget\\packages"
+    ]
+  }
+}

@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\calculatordemo\calculatordemo.csproj" />
+  </ItemGroup>
+
 </Project>
