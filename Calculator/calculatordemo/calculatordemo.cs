@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace calculatordemo
 {
-    public class calculatordemo
+    public class Calculatordemo
     {
         public double firstNumber;
         public double secondNumber;
         public double result;
         public char operation;
 
-        public calculatordemo(double first, double second, char opp)
+        public Calculatordemo(double first, double second, char opp)
         {
             firstNumber = first;
             secondNumber = second;

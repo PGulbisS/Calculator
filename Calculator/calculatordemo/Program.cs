@@ -24,7 +24,14 @@ namespace calculatordemo
             Console.WriteLine("Whats your choice?");
             char myopp = char.Parse(Console.ReadLine());
 
-            calculatordemo User = new calculatordemo(firstnum, secondnum, myopp);
+            Calculatordemo User = new Calculatordemo(firstnum, secondnum, myopp);
+
+            Console.WriteLine("-----------------------------------");
+            Operator add = Operator.Pluss;
+            Operator minus = Operator.Minuss;
+            Operator multi = Operator.Multiply;
+            Operator divide = Operator.Divide;
+
         }
     }
 }
