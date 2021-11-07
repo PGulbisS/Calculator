@@ -1,5 +1,6 @@
 ﻿# Calculator
 FinalProject.
+
 Labdien,
 
 mani sauc Pēteris Gulbis - Štorhs.
