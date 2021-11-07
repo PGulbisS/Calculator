@@ -1,9 +1,7 @@
 ﻿# Calculator
 FinalProject.
 
-Labdien,
-
-mani sauc Pēteris Gulbis - Štorhs.
+Labdien,mani sauc Pēteris Gulbis - Štorhs.
 
 Kā gala darbu programmā -  Ievads C# vēlos izstrādāt: Kalkulatoru.
 
