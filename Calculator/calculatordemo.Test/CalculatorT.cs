@@ -17,7 +17,7 @@ namespace calculatordemo.Test
             var calculator = new calculator();
 
             //Act
-            var result = calculator.GetNumbers(1);
+            var result = calculatordemo.calculator.GetNumbers(1);
             //Assert
             Assert.Equal("1", result);
 
@@ -30,7 +30,7 @@ namespace calculatordemo.Test
             var calculator = new calculator();
 
             //Act
-            var result = calculator.GetNumbers(10);
+            var result = calculatordemo.calculator.GetNumbers(10);
             //Assert
             Assert.Equal("minuss", result);
 
@@ -42,7 +42,7 @@ namespace calculatordemo.Test
             var calculator = new calculator();
 
             //Act
-            var result = calculator.GetNumbers(0);
+            var result = calculatordemo.calculator.GetNumbers(0);
             //Assert
             Assert.Equal("multiply", result);
 
@@ -57,7 +57,7 @@ namespace calculatordemo.Test
             var calculator = new calculator();
 
             //Act
-            var result = calculator.GetNumbers(testableNumber);
+            var result = calculatordemo.calculator.GetNumbers(testableNumber);
             //Assert
             Assert.Equal("divide", result);
 

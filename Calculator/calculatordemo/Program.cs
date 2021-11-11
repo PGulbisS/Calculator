@@ -27,10 +27,34 @@ namespace calculatordemo
             Calculatordemo User = new Calculatordemo(firstnum, secondnum, myopp);
 
             Console.WriteLine("-----------------------------------");
+
+            //----------------------------------
             Operator add = Operator.Pluss;
             Operator minus = Operator.Minuss;
             Operator multi = Operator.Multiply;
             Operator divide = Operator.Divide;
+
+            //------------------------------------
+            ICalculate adding = new Addition();
+            
+            double calculatesum = adding.Calculate(firstnum,secondnum);
+
+            ICalculate subtracking = new Subtraction();
+            ICalculate multiplier = new Multiplication();
+            ICalculate divider = new Division();
+
+
+            Console.WriteLine(calculatesum);
+           
+
+
+
+
+
+
+
+
+
 
         }
     }

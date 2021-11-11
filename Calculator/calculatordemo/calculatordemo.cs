@@ -6,89 +6,78 @@ using System.Threading.Tasks;
 
 namespace calculatordemo
 {
-    public class Calculatordemo
+    public interface ICalculatedemo
+    {
+       double Addition(double a, double b);
+       double Subtraction(double a, double b);
+       double Multiplication(double a, double b);
+       double Division(double a, double b);
+
+       double Power(int a, int b);
+
+       // double Sqrt(int a);
+
+        int Factorial(int a);
+
+       // int LN(int a);
+
+        //int sin(int a);
+    }
+
+
+    public class Calculatordemo : ICalculatedemo
     {
         public double firstNumber;
         public double secondNumber;
-        public double result;
-        public char operation;
 
-        public Calculatordemo(double first, double second, char opp)
+        public double Addition(double a, double b)
         {
-            firstNumber = first;
-            secondNumber = second;
-            operation = opp;
-            operations();
+            return a + b;
         }
-        public void operations()
+ 
+        public double Subtraction(double a, double b)
         {
-            switch (operation)
+            return a-b;
+        }
+
+        public double Multiplication(double a, double b)
+        {
+            return a * b;
+        }
+        public double Division(double a, double b) 
+        {
+            return a / b;
+        }
+        public double Power(int a, int b) 
+        { 
+            int result = 1;
+            for (int i = 1; i <= a; i++) 
             {
-                case '1':
-                    result = firstNumber + secondNumber;
-                    Console.WriteLine("The sum of {0} and {1} is {2}", firstNumber, secondNumber, result);
-                    startover();
-                    break;
-                case '2':
-                    result = firstNumber - secondNumber;
-                    Console.WriteLine("The differece of {0} and {1} is {2}", firstNumber, secondNumber, result);
-                    startover();
-                    break;
-                case '3':
-                    result = firstNumber * secondNumber;
-                    Console.WriteLine("The  outcome {0} and {1} is {2}", firstNumber, secondNumber, result);
-
-                    break;
-                case '4':
-                    result = firstNumber / secondNumber;
-                    Console.WriteLine("The division of {0} and {1} is {2}", firstNumber, secondNumber, result);
-                    startover();
-                    break;
-
-                default:
-                    Console.WriteLine("Invalid operation, please enter valid operation");
-                    End();
-                    break;
-
+                result = MathPow(i);
             }
+           
+            return result;
 
         }
-        public void startover()
+        public int Factorial(int a)
         {
-            Console.WriteLine("Do you want to continue?\nIf \'Yes\' then press and enter (Y)" + "If you want to exit press any other key");
-            string YesorNo = Console.ReadLine();
-            bool mybool = (YesorNo == "y" || YesorNo == "Y");
-            if (mybool == true)
+            int result = 1;
+            for (int i = 1; i <= a; i++)
             {
-                repeat();
+                result = result * i;
             }
-            else
-            {
-
-            }
-
+            return result;
         }
-        public void repeat()
-        {
-            firstNumber = result;
-            Console.WriteLine("Type here the next number");
 
-            secondNumber = double.Parse(Console.ReadLine());
-            Console.WriteLine("Choose an option");
-            Console.WriteLine("\t1 - Pluss");
-            Console.WriteLine("\t2 - Minuss");
-            Console.WriteLine("\t3 - Multiply");
-            Console.WriteLine("\t4 - Divide");
-            Console.WriteLine("Whats your choice?");
-            operation = char.Parse(Console.ReadLine());
-            operations();
 
-        }
-        public void End()
-        {
-            Console.WriteLine("Final Result is {0}", result);
-            Console.WriteLine("Press any key to Exit the application");
-            Console.ReadKey();
-        }
+
+
+
+
+        
+
+
+
+
     }
 }

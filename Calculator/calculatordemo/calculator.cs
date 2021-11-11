@@ -8,7 +8,7 @@ namespace calculatordemo
 {
     public class calculator
     {
-        public object GetNumbers(int number)
+        public static object GetNumbers(int number)
         {
 
             if (number - 10 == 0)
@@ -26,9 +26,6 @@ namespace calculatordemo
             return number.ToString();
         }
 
-        public object GetNumbers(int v1, int v2)
-        {
-            throw new NotImplementedException();
-        }
+     
     }
 }
