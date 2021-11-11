@@ -12,7 +12,6 @@ namespace calculatordemo
         {
             
         }
-
         public InputCorrectNumbersException(string message) : base(message) 
         {
             
@@ -22,12 +21,5 @@ namespace calculatordemo
             
         }
 
-
-
-
     }
-    
-
-
-
 }

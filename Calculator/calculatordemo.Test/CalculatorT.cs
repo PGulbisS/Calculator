@@ -12,15 +12,12 @@ namespace calculatordemo.Test
             //If two numbers subtrack, then return "minuss"
             //If two numbers multiply, then return "multiply"
             //If two numbers divide, then return "divide"
-
             //Arrange
             var calculator = new calculator();
-
             //Act
             var result = calculatordemo.calculator.GetNumbers(1);
             //Assert
             Assert.Equal("1", result);
-
         }
 
         [Fact]
@@ -28,24 +25,20 @@ namespace calculatordemo.Test
         {
             //Arrange
             var calculator = new calculator();
-
             //Act
             var result = calculatordemo.calculator.GetNumbers(10);
             //Assert
             Assert.Equal("minuss", result);
-
         }
         [Fact]
         public void GetTwoNumbers_WhenNumbersMultiply_ThenReturnMultiply()
         {
             //Arrange
             var calculator = new calculator();
-
             //Act
             var result = calculatordemo.calculator.GetNumbers(0);
             //Assert
             Assert.Equal("multiply", result);
-
         }
         [Theory]
         [InlineData(100)]
@@ -55,12 +48,10 @@ namespace calculatordemo.Test
         {
             //Arrange
             var calculator = new calculator();
-
             //Act
             var result = calculatordemo.calculator.GetNumbers(testableNumber);
             //Assert
             Assert.Equal("divide", result);
-
         }
 
     }

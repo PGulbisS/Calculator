@@ -8,14 +8,10 @@ namespace calculatordemo
         {
             Console.WriteLine("Hello I am console app Calculator");
             Console.WriteLine("----------------------------------");
-
-
             Console.WriteLine("Type here the first number");
             double firstnum = double.Parse(Console.ReadLine());
-
             Console.WriteLine("Type here the second number");
             double secondnum = double.Parse(Console.ReadLine());
-
             Console.WriteLine("Choose an option");
             Console.WriteLine("\t1 - Pluss");
             Console.WriteLine("\t2 - Minuss");
@@ -24,35 +20,37 @@ namespace calculatordemo
             Console.WriteLine("Whats your choice?");
             char myopp = char.Parse(Console.ReadLine());
 
-            Calculatordemo User = new Calculatordemo(firstnum, secondnum, myopp);
+            double result = 0;
+            Calculatordemo calc = new Calculatordemo();
+            if (myopp == '1')
+            {
+                result = calc.Addition(firstnum, secondnum);
+            }
+            else if (myopp == '2')
+            {
+                result = calc.Subtraction(firstnum, secondnum);
+            }
+            else if (myopp == '3')
+            {
+                result = calc.Multiplication(firstnum, secondnum);
+            }
+            else if (myopp == '4') 
+            {
+                
+                try
+                {
+                    result = calc.Division(firstnum, secondnum);
+                }
+                catch(InputCorrectNumbersException e)
+                {
 
-            Console.WriteLine("-----------------------------------");
-
-            //----------------------------------
-            Operator add = Operator.Pluss;
-            Operator minus = Operator.Minuss;
-            Operator multi = Operator.Multiply;
-            Operator divide = Operator.Divide;
-
-            //------------------------------------
-            ICalculate adding = new Addition();
+                    Console.WriteLine($"This input number is not correct, please enter a valid one");
+                    Console.WriteLine(e.Message);
+                    return;
+                }
+            }
             
-            double calculatesum = adding.Calculate(firstnum,secondnum);
-
-            ICalculate subtracking = new Subtraction();
-            ICalculate multiplier = new Multiplication();
-            ICalculate divider = new Division();
-
-
-            Console.WriteLine(calculatesum);
-           
-
-
-
-
-
-
-
+            Console.WriteLine($"Your result is: {result}");
 
 
 
