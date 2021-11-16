@@ -19,7 +19,6 @@ namespace calculatordemo.Test
             //Assert
             Assert.Equal("1", result);
         }
-
         [Fact]
         public void GetTwoNumbers_WhenNumbersSubtrack_ThenReturnMinuss()
         {

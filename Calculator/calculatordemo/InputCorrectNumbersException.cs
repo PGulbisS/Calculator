@@ -14,12 +14,11 @@ namespace calculatordemo
         }
         public InputCorrectNumbersException(string message) : base(message) 
         {
-            
+
         }
         public InputCorrectNumbersException(string message, Exception innerException) : base(message, innerException) 
         {
             
         }
-
     }
 }

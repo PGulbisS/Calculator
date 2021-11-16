@@ -17,43 +17,43 @@ namespace calculatordemo
             Console.WriteLine("\t2 - Minuss");
             Console.WriteLine("\t3 - Multiply");
             Console.WriteLine("\t4 - Divide");
+            Console.WriteLine("\t5 - Power");
             Console.WriteLine("Whats your choice?");
             char myopp = char.Parse(Console.ReadLine());
-
-            double result = 0;
-            Calculatordemo calc = new Calculatordemo();
-            if (myopp == '1')
+            try
             {
-                result = calc.Addition(firstnum, secondnum);
-            }
-            else if (myopp == '2')
-            {
-                result = calc.Subtraction(firstnum, secondnum);
-            }
-            else if (myopp == '3')
-            {
-                result = calc.Multiplication(firstnum, secondnum);
-            }
-            else if (myopp == '4') 
-            {
-                
-                try
+                double result = 0;
+                Calculatordemo calc = new Calculatordemo();
+                switch (myopp)
                 {
-                    result = calc.Division(firstnum, secondnum);
+                    case '1':
+                        result = calc.Addition(firstnum, secondnum);
+                        break;
+                    case '2':
+                        result = calc.Subtraction(firstnum, secondnum);
+                        break;
+                    case '3':
+                        result = calc.Multiplication(firstnum, secondnum);
+                        break;
+                    case '4':
+                        result = calc.Division(firstnum, secondnum);
+                        break;
+                    case '5':
+                        result = calc.Power(firstnum, secondnum);
+                        break;
+                    default:
+                        Console.WriteLine("Invalid operation, please try again.");
+                        break;
                 }
-                catch(InputCorrectNumbersException e)
-                {
-
-                    Console.WriteLine($"This input number is not correct, please enter a valid one");
-                    Console.WriteLine(e.Message);
-                    return;
-                }
+                Console.WriteLine($"Your result is: {result}");
+                Console.WriteLine("Press any key to close the Calculator");
+                Console.ReadKey();
             }
-            
-            Console.WriteLine($"Your result is: {result}");
-
-
-
+            catch (InputCorrectNumbersException e)
+            {
+                Console.WriteLine($"This input number is not correct, please enter a valid one");
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

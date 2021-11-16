@@ -12,6 +12,5 @@ namespace calculatordemo
         Minuss,
         Multiply,
         Divide,
-
     }
 }

@@ -10,7 +10,6 @@ namespace calculatordemo
     {
         public static object GetNumbers(int number)
         {
-
             if (number - 10 == 0)
             {
                 return "minuss";
@@ -25,7 +24,6 @@ namespace calculatordemo
             }
             return number.ToString();
         }
-
      
     }
 }
