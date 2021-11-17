@@ -8,17 +8,17 @@ namespace calculatordemo
 {
     public class InputCorrectNumbersException : Exception
     {
-        public InputCorrectNumbersException() 
-        {
-            
-        }
-        public InputCorrectNumbersException(string message) : base(message) 
+        public InputCorrectNumbersException()
         {
 
         }
-        public InputCorrectNumbersException(string message, Exception innerException) : base(message, innerException) 
+        public InputCorrectNumbersException(string message) : base(message)
         {
-            
+
+        }
+        public InputCorrectNumbersException(string message, Exception innerException) : base(message, innerException)
+        {
+
         }
     }
 }

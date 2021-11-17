@@ -14,16 +14,16 @@ namespace calculatordemo
             {
                 return "minuss";
             }
-            if (number * 5 == 0) 
+            if (number * 5 == 0)
             {
                 return "multiply";
             }
-            if (number % 5 == 0) 
+            if (number % 5 == 0)
             {
                 return "divide";
             }
             return number.ToString();
         }
-     
+
     }
 }
